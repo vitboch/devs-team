@@ -16,7 +16,7 @@ const App = () => {
                     <Route path=":devId" element={<DeveloperPage />} />
                 </Route>
                 <Route path="favourites" element={<FavouritesLayout />} />
-                <Route path="*" element={<Navigate to={-1} />} />
+                <Route path="*" element={<Navigate to={""} />} />
             </Routes>
         </>
     );
