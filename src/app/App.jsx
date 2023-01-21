@@ -5,6 +5,7 @@ import MainPage from "./components/page/mainPage";
 import NavBar from "./components/ui/navBar";
 import FavouritesLayout from "./layouts/favouritesLayout";
 import MainLayout from "./layouts/mainLayout";
+import Footer from "./components/ui/footer";
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                 <Route path="favourites" element={<FavouritesLayout />} />
                 <Route path="*" element={<Navigate to={""} />} />
             </Routes>
+            <Footer/>
         </>
     );
 };
