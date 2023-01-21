@@ -18,7 +18,7 @@ const Card = ({ _id, firstName, lastName, birthday, photo, about }) => {
                     <div className="container">
                         <div className="d-flex justify-content-between align-items-center pb-3">
                             <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <Link to={`/devId/${_id}`}>
+                                <Link to={`/${_id}`}>
                                     <Button
                                         label="открыть"
                                         size="btn-sm"
