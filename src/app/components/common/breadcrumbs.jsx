@@ -1,0 +1,70 @@
+import React, { useEffect, useState } from "react";
+import { NavLink, useLocation, useParams } from "react-router-dom";
+
+const Breadcrumbs = () => {
+    const [nameDev, setName] = useState();
+    const { pathname } = useLocation();
+    const { devId } = useParams();
+    const pathnames = pathname.split("/").filter((i) => i);
+    useEffect(() => {
+        if (devId) {
+            setName("Никита");
+        }
+    }, [pathname]);
+
+    const generateCrumbs = (pathnames) => {
+        if (pathnames.length > 0) {
+            return (
+                <>
+                    <li
+                        className={`breadcrumb-item active`}
+                        aria-current="page"
+                    >
+                        <NavLink to={"/"}>Home</NavLink>
+                    </li>
+                    {pathnames.map((crumb, i) => {
+                        const isLast = i === pathnames.length - 1;
+                        const crumbName =
+                            devId === crumb
+                                ? nameDev
+                                : crumb[0].toUpperCase() + crumb.slice(1);
+                        if (!isLast) {
+                            return (
+                                <li
+                                    key={i}
+                                    className={`breadcrumb-item active`}
+                                    aria-current="page"
+                                >
+                                    <NavLink to={crumb}>{crumbName}</NavLink>
+                                </li>
+                            );
+                        } else {
+                            return (
+                                <li
+                                    key={i}
+                                    className={`breadcrumb-item `}
+                                    aria-current="page"
+                                >
+                                    {crumbName}
+                                </li>
+                            );
+                        }
+                    })}
+                </>
+            );
+        } else {
+            return (
+                <li className={`breadcrumb-item `} aria-current="page">
+                    Home
+                </li>
+            );
+        }
+    };
+    return (
+        <nav aria-label="breadcrumb ">
+            <ol className="breadcrumb mx-3">{generateCrumbs(pathnames)}</ol>
+        </nav>
+    );
+};
+
+export default Breadcrumbs;
