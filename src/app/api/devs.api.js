@@ -30,7 +30,8 @@ const devs = [
         completed: [
             "Настройка начального проекта",
             "Качество кода",
-            "Архитектура"
+            "Архитектура",
+            "Карточка человека"
         ]
     },
     {
@@ -57,7 +58,7 @@ const devs = [
             telegram: "https://t.me/ProductL22",
             discord: "https://discordapp.com/users/827158247675920414/"
         },
-        completed: ["Карточка человека"]
+        completed: ["Страница участника"]
     },
     {
         _id: "34512",
