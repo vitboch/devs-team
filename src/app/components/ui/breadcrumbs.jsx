@@ -10,7 +10,7 @@ const Breadcrumbs = () => {
     useEffect(() => {
         if (devId) {
             const dev = devs.find((dev) => dev._id === devId);
-            setName(dev.firstName + " " + dev.lastName);
+            setName(dev ? dev.firstName + " " + dev.lastName : "");
         }
     }, [pathname]);
 
