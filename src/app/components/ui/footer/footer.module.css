@@ -1,0 +1,22 @@
+.footerLink {
+    padding: 4px 7px;
+    border-radius: 3px;
+    transition: all 0.15s ease;
+}
+
+.footerLink {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.footerLink:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.footerIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
