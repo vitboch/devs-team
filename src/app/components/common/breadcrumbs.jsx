@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation, useParams } from "react-router-dom";
+import devs from "../../api/devs.api";
 
 const Breadcrumbs = () => {
     const [nameDev, setName] = useState();
@@ -8,7 +9,8 @@ const Breadcrumbs = () => {
     const pathnames = pathname.split("/").filter((i) => i);
     useEffect(() => {
         if (devId) {
-            setName("Никита");
+            const dev = devs.find((dev) => dev._id === devId);
+            setName(dev.firstName + " " + dev.lastName);
         }
     }, [pathname]);
 
