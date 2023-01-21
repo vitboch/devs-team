@@ -91,7 +91,7 @@ const devs = [
         lastName: "Баулин",
         birthday: "1975-09-10",
         photo: dima,
-        about: "Требователен к себе. Нравится постоянно расти и развиваться. Люблю грамотность. Как в русском и английском, так и в написании кода. Ценю в людях открытость и легкость. Играю в бильярд. Пишу электронную музыку.",
+        about: "Требователен к себе. Нравится постоянно расти и развиваться. Люблю грамотность, как в русском и английском, так и в написании кода. Ценю в людях открытость и легкость. Играю в бильярд. Пишу электронную музыку.",
         technologies: {
             react: { name: "React", percents: "75", color: "info" },
             javascript: {
@@ -101,7 +101,7 @@ const devs = [
             },
             git: { name: "GIT", percents: "50", color: "dark" },
             html: { name: "HTML", percents: "100", color: "danger" },
-            css: { name: "CSS", percents: "100", color: "primary" }
+            css: { name: "CSS", percents: "95", color: "primary" }
         },
         contacts: {
             github: "https://github.com/nonfermata",
