@@ -6,7 +6,6 @@ const DeveloperPage = () => {
     const { devId } = useParams();
     const navigate = useNavigate();
     useEffect(() => {
-        console.log(devs.find((dev) => dev._id === devId));
         if (!devs.find((dev) => dev._id === devId)) {
             navigate("/");
         }
