@@ -1,5 +1,7 @@
 import avatar from "../../assets/images/avatar.jpeg";
 import vitaly from "../../assets/images/vitaly.jpeg";
+import andrey from "../../assets/images/andrey.jpg";
+
 import svyat from "../../assets/images/svyat.jpg";
 
 const devs = [
@@ -35,7 +37,7 @@ const devs = [
         ]
     },
     {
-     _id: "23451",
+        _id: "23451",
         firstName: "Святослав",
         lastName: "Орлов",
         birthday: "1997-09-29",
@@ -116,27 +118,27 @@ const devs = [
         _id: "51234",
         firstName: "Андрей",
         lastName: "Диденко",
-        birthday: "2000-01-01",
-        photo: avatar,
+        birthday: "1991-07-14",
+        photo: andrey,
         about: "О себе",
         technologies: {
-            react: { name: "React", percents: "100", color: "info" },
+            react: { name: "React", percents: "50", color: "info" },
             javascript: {
                 name: "JavaScript",
-                percents: "100",
+                percents: "70",
                 color: "warning"
             },
-            git: { name: "GIT", percents: "100", color: "dark" },
-            html: { name: "HTML", percents: "100", color: "danger" },
-            css: { name: "CSS", percents: "100", color: "primary" }
+            git: { name: "GIT", percents: "60", color: "dark" },
+            html: { name: "HTML", percents: "75", color: "danger" },
+            css: { name: "CSS", percents: "60", color: "primary" }
         },
         contacts: {
-            github: "https://github.com/",
-            email: "dev@develop.dev",
-            telegram: "https://t.me/",
-            discord: "https://discordapp.com/users/хххххххххххххххххх/"
+            github: "https://github.com/AndreyDid",
+            email: "https://andreydidenk0@yandex.ru",
+            telegram: "https://t.me/AndreyDidenk0",
+            discord: "https://discordapp.com/users/514663030567731213/"
         },
-        completed: ["Button", "Badge"]
+        completed: ["Button", "Badge", "Slider"]
     }
 ];
 

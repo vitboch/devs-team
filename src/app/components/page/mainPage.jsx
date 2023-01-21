@@ -1,13 +1,14 @@
 import React from "react";
 import devs from "../../api/devs.api";
 import Card from "../common/card";
+import Slider from "../ui/slider";
 
 const MainPage = () => {
     return (
         <>
-            <h2 className="fw-light text-center mb-4">
-                Здесь можно разместить Slider
-            </h2>
+            <div className="fw-light text-center mb-4">
+                <Slider/>
+            </div>
             <main>
                 <section className="py-5 container p-3">
                     <div className="row py-lg-5">
