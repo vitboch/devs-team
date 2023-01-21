@@ -1,6 +1,10 @@
 import avatar from "../../assets/images/avatar.jpeg";
 import vitaly from "../../assets/images/vitaly.jpeg";
+<<<<<<< HEAD
 import dima from "../../assets/images/dima.jpg";
+=======
+import andrey from "../../assets/images/andrey.jpg";
+>>>>>>> 9c0ef461a2ffe825cc3bdd1f485deed4bd186c9b
 
 const devs = [
     {
@@ -30,7 +34,8 @@ const devs = [
         completed: [
             "Настройка начального проекта",
             "Качество кода",
-            "Архитектура"
+            "Архитектура",
+            "Карточка человека"
         ]
     },
     {
@@ -57,7 +62,7 @@ const devs = [
             telegram: "https://t.me/",
             discord: "https://discordapp.com/users/хххххххххххххххххх/"
         },
-        completed: ["Карточка человека"]
+        completed: ["Страница участника"]
     },
     {
         _id: "34512",
@@ -115,27 +120,27 @@ const devs = [
         _id: "51234",
         firstName: "Андрей",
         lastName: "Диденко",
-        birthday: "2000-01-01",
-        photo: avatar,
+        birthday: "1991-07-14",
+        photo: andrey,
         about: "О себе",
         technologies: {
-            react: { name: "React", percents: "100", color: "info" },
+            react: { name: "React", percents: "50", color: "info" },
             javascript: {
                 name: "JavaScript",
-                percents: "100",
+                percents: "70",
                 color: "warning"
             },
-            git: { name: "GIT", percents: "100", color: "dark" },
-            html: { name: "HTML", percents: "100", color: "danger" },
-            css: { name: "CSS", percents: "100", color: "primary" }
+            git: { name: "GIT", percents: "60", color: "dark" },
+            html: { name: "HTML", percents: "75", color: "danger" },
+            css: { name: "CSS", percents: "60", color: "primary" }
         },
         contacts: {
-            github: "https://github.com/",
-            email: "dev@develop.dev",
-            telegram: "https://t.me/",
-            discord: "https://discordapp.com/users/хххххххххххххххххх/"
+            github: "https://github.com/AndreyDid",
+            email: "https://andreydidenk0@yandex.ru",
+            telegram: "https://t.me/AndreyDidenk0",
+            discord: "https://discordapp.com/users/514663030567731213/"
         },
-        completed: ["Button", "Badge"]
+        completed: ["Button", "Badge", "Slider"]
     }
 ];
 
