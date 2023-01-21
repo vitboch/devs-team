@@ -1,10 +1,7 @@
 import avatar from "../../assets/images/avatar.jpeg";
 import vitaly from "../../assets/images/vitaly.jpeg";
-<<<<<<< HEAD
 import dima from "../../assets/images/dima.jpg";
-=======
 import andrey from "../../assets/images/andrey.jpg";
->>>>>>> 9c0ef461a2ffe825cc3bdd1f485deed4bd186c9b
 
 const devs = [
     {
