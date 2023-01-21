@@ -5,11 +5,13 @@ import MainPage from "./components/page/mainPage";
 import NavBar from "./components/ui/navBar";
 import FavouritesLayout from "./layouts/favouritesLayout";
 import MainLayout from "./layouts/mainLayout";
+import Slider from "./components/ui/slider";
 
 const App = () => {
     return (
         <>
             <NavBar />
+            <Slider/>
             <Routes>
                 <Route path="" element={<MainLayout />}>
                     <Route path="" element={<MainPage />} />
