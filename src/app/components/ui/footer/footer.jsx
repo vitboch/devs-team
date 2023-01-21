@@ -5,8 +5,8 @@ import styles from "./footer.module.css";
 
 const Footer = () => {
     return (
-        <div className="fixed-bottom bg-secondary text-light">
-            <div className="d-flex justify-content-between align-items-center mx-5 my-3">
+        <div className="bg-secondary text-light px-5 py-4">
+            <div className="d-flex justify-content-between align-items-center">
                 <div>
                     <p>
                         <i className=" bi bi-bug-fill pe-3 fs-5"></i>© 2022-2023
