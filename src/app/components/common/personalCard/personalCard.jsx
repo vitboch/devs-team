@@ -4,19 +4,26 @@ import Progress from "../../common/progress";
 import PropTypes from "prop-types";
 import devs from "../../../api/devs.api";
 import "./personalCard.scss";
-import findUser from "../../../../utils/findUser";
-import getAge from "../../../../utils/getAge";
+import findUser from "../../../utils/findUser";
+import getAge from "../../../utils/getAge";
 
 const PersonalCard = ({ id }) => {
     const [user, setUser] = useState();
     useEffect(() => {
         setUser({ ...findUser(id, devs) });
     }, []);
+    const handleClick = () => {
+        console.log(id);
+    };
     return (
         user && (
             <div className="container">
                 <h1 className="title">
-                    {user.firstName} {user.lastName} {<i class="bi bi-star-fill"></i>}
+                    {user.firstName} {user.lastName}{" "}
+                    <button onClick={handleClick}>
+                        {" "}
+                        {<i className="bi bi-star"></i>}
+                    </button>
                 </h1>
 
                 <div className="personal-card">

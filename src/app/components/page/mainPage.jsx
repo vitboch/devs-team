@@ -1,13 +1,14 @@
 import React from "react";
 import devs from "../../api/devs.api";
 import Card from "../common/card";
+import PersonalCard from "../common/personalCard/personalCard";
 import Slider from "../ui/slider";
 
 const MainPage = () => {
     return (
         <>
             <div className="fw-light text-center mb-4">
-                <Slider/>
+                <Slider />
             </div>
             <main>
                 <section className="py-5 container p-3">

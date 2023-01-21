@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 
 const Progress = ({ percents, color, name }) => {
     // in props must be used bootstrap colors – primary, warning, danger, info, success, dark
-    const progressClass =
-        "progress-bar progress-bar-striped bg-" + color;
+    const progressClass = "progress-bar progress-bar-striped bg-" + color;
     return (
         <>
             <p className="fs-5 mb-1">{name}</p>
@@ -24,7 +23,7 @@ const Progress = ({ percents, color, name }) => {
 };
 
 Progress.propTypes = {
-    percents: PropTypes.number,
+    percents: PropTypes.string,
     color: PropTypes.string,
     name: PropTypes.string
 };
