@@ -3,13 +3,12 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import DeveloperPage from "./components/page/developerPage";
 import FavouritesPage from "./components/page/favouritesPage";
 import MainPage from "./components/page/mainPage";
-import NavBar from "./components/ui/navBar";
+// import NavBar from "./components/ui/navBar";
 import MainLayout from "./layouts/mainLayout";
 
 const App = () => {
     return (
         <>
-            <NavBar />
             <Routes>
                 <Route path="" element={<MainLayout />}>
                     <Route path="" element={<MainPage />} />
