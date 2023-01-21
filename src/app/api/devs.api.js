@@ -106,7 +106,7 @@ const devs = [
             github: "https://github.com/nonfermata",
             email: "nonfermata@gmail.com",
             telegram: "https://t.me/febrecords",
-            discord: "https://discordapp.com/users/хххххххххххххххххх/"
+            discord: "https://discordapp.com/users/990199120285302815/"
         },
         completed: ["Progress", "Footer"]
     },
