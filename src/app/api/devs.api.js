@@ -135,7 +135,7 @@ const devs = [
             telegram: "https://t.me/AndreyDidenk0",
             discord: "https://discordapp.com/users/514663030567731213/"
         },
-        completed: ["Button", "Badge"]
+        completed: ["Button", "Badge", "Slider"]
     }
 ];
 
