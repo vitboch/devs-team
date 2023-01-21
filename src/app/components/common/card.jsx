@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Button from "../common/button";
+import getAge from "../../utils/getAge";
 
 const Card = ({ _id, firstName, lastName, birthday, photo, about }) => {
     return (
@@ -12,8 +13,8 @@ const Card = ({ _id, firstName, lastName, birthday, photo, about }) => {
                     <h5>
                         {firstName} {lastName}
                     </h5>
-                    <p className="card-text">{birthday}</p>
-                    <span className="block-about card-text">{about}</span>
+                    <p className="card-text">{getAge(birthday)}</p>
+                    <p className="block-about card-text">{about}</p>
                     <div className="container">
                         <div className="d-flex justify-content-between align-items-center pb-3">
                             <div className="d-grid gap-2 d-md-flex justify-content-md-end">

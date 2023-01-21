@@ -14,7 +14,7 @@ const MainPage = () => {
                         <div className="col-lg-5 col-md-10 mx-auto">
                             <h1 className="fw-light text-center mb-4">О нас</h1>
                             <p className="lead text-muted">
-                                Мы – команда web-разработчиков.
+                                Мы – команда React-разработчиков.
                             </p>
                             <p className="lead text-muted">
                                 Мы креативны, амбициозны, энергичны.
@@ -35,7 +35,7 @@ const MainPage = () => {
                 </section>
                 <div className="album py-5 bg-light p-3">
                     <div className="container">
-                        <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 ">
+                        <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
                             {devs.map((dev) => (
                                 <Card key={dev._id} {...dev} />
                             ))}
