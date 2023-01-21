@@ -88,27 +88,27 @@ const devs = [
         _id: "45123",
         firstName: "Дмитрий",
         lastName: "Баулин",
-        birthday: "2000-01-01",
+        birthday: "1975-09-10",
         photo: avatar,
-        about: "О себе",
+        about: "Требователен к себе. Нравится постоянно расти и развиваться. Люблю грамотность. Как в русском и английском, так и в написании кода. Ценю в людях открытость и легкость. Играю в бильярд. Пишу электронную музыку.",
         technologies: {
-            react: { name: "React", percents: "100", color: "info" },
+            react: { name: "React", percents: "75", color: "info" },
             javascript: {
                 name: "JavaScript",
-                percents: "100",
+                percents: "90",
                 color: "warning"
             },
-            git: { name: "GIT", percents: "100", color: "dark" },
+            git: { name: "GIT", percents: "50", color: "dark" },
             html: { name: "HTML", percents: "100", color: "danger" },
             css: { name: "CSS", percents: "100", color: "primary" }
         },
         contacts: {
-            github: "https://github.com/",
-            email: "dev@develop.dev",
-            telegram: "https://t.me/",
+            github: "https://github.com/nonfermata",
+            email: "nonfermata@gmail.com",
+            telegram: "https://t.me/febrecords",
             discord: "https://discordapp.com/users/хххххххххххххххххх/"
         },
-        completed: ["Progress"]
+        completed: ["Progress", "Footer"]
     },
     {
         _id: "51234",
