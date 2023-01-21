@@ -1,5 +1,6 @@
 import avatar from "../../assets/images/avatar.jpeg";
 import vitaly from "../../assets/images/vitaly.jpeg";
+import svyat from "../../assets/images/svyat.jpg";
 
 const devs = [
     {
@@ -33,28 +34,28 @@ const devs = [
         ]
     },
     {
-        _id: "23451",
+     _id: "23451",
         firstName: "Святослав",
         lastName: "Орлов",
-        birthday: "2000-01-01",
-        photo: avatar,
+        birthday: "1997-09-29",
+        photo: svyat,
         about: "О себе",
         technologies: {
-            react: { name: "React", percents: "100", color: "info" },
+            react: { name: "React", percents: "60", color: "info" },
             javascript: {
                 name: "JavaScript",
-                percents: "100",
+                percents: "70",
                 color: "warning"
             },
-            git: { name: "GIT", percents: "100", color: "dark" },
-            html: { name: "HTML", percents: "100", color: "danger" },
-            css: { name: "CSS", percents: "100", color: "primary" }
+            git: { name: "GIT", percents: "60", color: "dark" },
+            html: { name: "HTML", percents: "80", color: "danger" },
+            css: { name: "CSS", percents: "80", color: "primary" }
         },
         contacts: {
-            github: "https://github.com/",
-            email: "dev@develop.dev",
-            telegram: "https://t.me/",
-            discord: "https://discordapp.com/users/хххххххххххххххххх/"
+            github: "https://github.com/orlov11",
+            email: "svyatoslav.orlov11@gmail.com",
+            telegram: "https://t.me/ProductL22",
+            discord: "https://discordapp.com/users/827158247675920414/"
         },
         completed: ["Карточка человека"]
     },
