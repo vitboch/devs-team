@@ -1,5 +1,6 @@
 import avatar from "../../assets/images/avatar.jpeg";
 import vitaly from "../../assets/images/vitaly.jpeg";
+import dima from "../../assets/images/dima.jpg";
 
 const devs = [
     {
@@ -89,7 +90,7 @@ const devs = [
         firstName: "Дмитрий",
         lastName: "Баулин",
         birthday: "1975-09-10",
-        photo: avatar,
+        photo: dima,
         about: "Требователен к себе. Нравится постоянно расти и развиваться. Люблю грамотность. Как в русском и английском, так и в написании кода. Ценю в людях открытость и легкость. Играю в бильярд. Пишу электронную музыку.",
         technologies: {
             react: { name: "React", percents: "75", color: "info" },
