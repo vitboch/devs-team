@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import getBootstrapColor from "../../utils/getBootstrapColor";
 
 const Progress = ({ percents, color, name }) => {
     const progressClass =
-        "progress-bar progress-bar-striped bg-" + getBootstrapColor(color);
+        "progress-bar progress-bar-striped bg-" + color;
     return (
         <>
             <p className="fs-5 mb-1">{name}</p>
