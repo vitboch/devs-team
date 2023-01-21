@@ -14,7 +14,7 @@ const MainPage = () => {
                         <div className="col-lg-5 col-md-10 mx-auto">
                             <h1 className="fw-light text-center mb-4">О нас</h1>
                             <p className="lead text-muted">
-                                Мы – команда React-разработчиков.
+                                Мы – команда React-разработчиков.{" "}
                             </p>
                             <p className="lead text-muted">
                                 Мы креативны, амбициозны, энергичны.

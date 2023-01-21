@@ -16,7 +16,7 @@ const PersonalCard = ({ id }) => {
         user && (
             <div className="container">
                 <h1 className="title">
-                    {user.firstName} {user.lastName}
+                    {user.firstName} {user.lastName} {<i class="bi bi-star-fill"></i>}
                 </h1>
 
                 <div className="personal-card">
