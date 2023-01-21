@@ -1,7 +1,7 @@
 import avatar from "../../assets/images/avatar.jpeg";
 import vitaly from "../../assets/images/vitaly.jpeg";
 
-const members = [
+const devs = [
     {
         _id: "12345",
         firstName: "Виталий",
@@ -137,3 +137,5 @@ const members = [
         completed: ["Button", "Badge"]
     }
 ];
+
+export default devs;
