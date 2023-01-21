@@ -5,7 +5,7 @@ import MainPage from "./components/page/mainPage";
 import NavBar from "./components/ui/navBar";
 import FavouritesLayout from "./layouts/favouritesLayout";
 import MainLayout from "./layouts/mainLayout";
-import Footer from "./components/ui/footer";
+import Footer from "./components/ui/footer/footer";
 
 const App = () => {
     return (

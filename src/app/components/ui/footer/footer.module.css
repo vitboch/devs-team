@@ -1,0 +1,14 @@
+.footerLink {
+    padding: 4px 7px;
+    border-radius: 3px;
+    transition: all 0.15s ease;
+}
+
+.footerLink:hover {
+    background-color: #5e666d;
+}
+
+.footerIcon {
+    width: 23px;
+    height: 23px;
+}
