@@ -17,56 +17,53 @@ const Breadcrumbs = () => {
     const generateCrumbs = (pathnames) => {
         if (pathnames.length > 0) {
             return (
-                <>
-                    <li
-                        className={`breadcrumb-item active`}
-                        aria-current="page"
-                    >
-                        <NavLink to={"/"}>Home</NavLink>
-                    </li>
-                    {pathnames.map((crumb, i) => {
-                        const isLast = i === pathnames.length - 1;
-                        const crumbName =
-                            devId === crumb
-                                ? nameDev
-                                : crumb[0].toUpperCase() + crumb.slice(1);
-                        if (!isLast) {
-                            return (
-                                <li
-                                    key={i}
-                                    className={`breadcrumb-item active`}
-                                    aria-current="page"
-                                >
-                                    <NavLink to={crumb}>{crumbName}</NavLink>
-                                </li>
-                            );
-                        } else {
-                            return (
-                                <li
-                                    key={i}
-                                    className={`breadcrumb-item `}
-                                    aria-current="page"
-                                >
-                                    {crumbName}
-                                </li>
-                            );
-                        }
-                    })}
-                </>
+                <nav aria-label="breadcrumb ">
+                    <ol className="breadcrumb mx-3">
+                        {" "}
+                        <li
+                            className={`breadcrumb-item active`}
+                            aria-current="page"
+                        >
+                            <NavLink to={"/"}>Home</NavLink>
+                        </li>
+                        {pathnames.map((crumb, i) => {
+                            const isLast = i === pathnames.length - 1;
+                            const crumbName =
+                                devId === crumb
+                                    ? nameDev
+                                    : crumb[0].toUpperCase() + crumb.slice(1);
+                            if (!isLast) {
+                                return (
+                                    <li
+                                        key={i}
+                                        className={`breadcrumb-item active`}
+                                        aria-current="page"
+                                    >
+                                        <NavLink to={crumb}>
+                                            {crumbName}
+                                        </NavLink>
+                                    </li>
+                                );
+                            } else {
+                                return (
+                                    <li
+                                        key={i}
+                                        className={`breadcrumb-item `}
+                                        aria-current="page"
+                                    >
+                                        {crumbName}
+                                    </li>
+                                );
+                            }
+                        })}
+                    </ol>
+                </nav>
             );
         } else {
-            return (
-                <li className={`breadcrumb-item `} aria-current="page">
-                    Home
-                </li>
-            );
+            return <></>;
         }
     };
-    return (
-        <nav aria-label="breadcrumb ">
-            <ol className="breadcrumb mx-3">{generateCrumbs(pathnames)}</ol>
-        </nav>
-    );
+    return <>{generateCrumbs(pathnames)}</>;
 };
 
 export default Breadcrumbs;
