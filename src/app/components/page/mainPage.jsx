@@ -1,6 +1,7 @@
 import React from "react";
 import { useDeveloper } from "../../hooks/useDevelopers";
 import Card from "../common/card";
+import Loader from "../common/loader";
 import Slider from "../ui/slider";
 
 const MainPage = () => {
@@ -44,20 +45,20 @@ const MainPage = () => {
                 <div className="album py-5 bg-light p-3">
                     <div className="container">
                         <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
-                            {!isLoading
-                                ? developers.map((dev) => (
-                                      <Card
-                                          key={dev._id}
-                                          {...dev}
-                                          isFavourite={getIsFavouriteStatus(
-                                              dev._id
-                                          )}
-                                          handleFavourites={
-                                              changeFavouritesState
-                                          }
-                                      />
-                                  ))
-                                : "Loader..."}
+                            {!isLoading ? (
+                                developers.map((dev) => (
+                                    <Card
+                                        key={dev._id}
+                                        {...dev}
+                                        isFavourite={getIsFavouriteStatus(
+                                            dev._id
+                                        )}
+                                        handleFavourites={changeFavouritesState}
+                                    />
+                                ))
+                            ) : (
+                                <Loader />
+                            )}
                         </div>
                     </div>
                 </div>

@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../common/card";
 import PropTypes from "prop-types";
 import { useDeveloper } from "../../hooks/useDevelopers";
+import Loader from "../common/loader";
 
 const FavouritesPage = () => {
     const {
@@ -37,7 +38,7 @@ const FavouritesPage = () => {
                         </div>
                     )
                 ) : (
-                    "Loading..."
+                    <Loader />
                 )}
             </div>
         </>
