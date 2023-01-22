@@ -37,7 +37,6 @@
 4. Запустить проект »
  `npm start`
 
-
 ## В разработке принимали участие:
 
 * [Виталий Бочкарев](https://github.com/vitboch), team-lead
@@ -49,3 +48,4 @@
 * [Дмитрий Баулин](https://github.com/nonfermata)
 
 * [Андрей Диденко](https://github.com/AndreyDid)
+

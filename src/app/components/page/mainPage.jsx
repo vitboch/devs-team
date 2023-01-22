@@ -11,7 +11,7 @@ const MainPage = ({ favourites, handleFavourites }) => {
     return (
         <>
             <div className=" container fw-light text-center mb-4">
-                <Slider/>
+                <Slider />
             </div>
             <main>
                 <section className="py-5 container p-3">

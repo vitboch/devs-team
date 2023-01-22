@@ -25,8 +25,8 @@ const FavouritesPage = ({ favourites, handleFavourites }) => {
                         </div>
                     </div>
                 ) : (
-                    <div className="fs-4 fw-light">
-                        У Вас никого нет в &quot;Избранном&quot; :(
+                    <div className="fs-4 fw-light text-center">
+                        У Вас никого нет в &quot;Избранном&quot; 😞
                     </div>
                 )}
             </div>
