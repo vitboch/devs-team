@@ -76,15 +76,15 @@ const devs = [
         photo: nikita,
         about: "Я Frontend разработчик. Люблю работать в команде, интересуюсь Гейм-дизайном.  Также, хочу развиваться, как руководитель. Моя цель - создать свою собственную студию по разработки.",
         technologies: [
-            { name: "React", percents: "75", color: "info" },
+            { name: "React", percents: "55", color: "info" },
             {
                 name: "JavaScript",
-                percents: "90",
+                percents: "75",
                 color: "warning"
             },
-            { name: "GIT", percents: "50", color: "dark" },
-            { name: "HTML", percents: "100", color: "danger" },
-            { name: "CSS", percents: "95", color: "primary" }
+            { name: "GIT", percents: "55", color: "dark" },
+            { name: "HTML", percents: "75", color: "danger" },
+            { name: "CSS", percents: "85", color: "primary" }
         ],
         contacts: [
             { name: "Github", url: "https://github.com/NikaLuki" },
@@ -134,17 +134,17 @@ const devs = [
         birthday: "1991-07-14",
         photo: andrey,
         about: "Ответственный, честный. Интерисуюсь 3D моделированием, видео-монтажом, программированием. Летом люблю кататься на мотоцикле.",
-        technologies: {
-            react: { name: "React", percents: "50", color: "info" },
-            javascript: {
+        technologies: [
+            { name: "React", percents: "50", color: "info" },
+            {
                 name: "JavaScript",
                 percents: "70",
                 color: "warning"
             },
-            git: { name: "GIT", percents: "60", color: "dark" },
-            html: { name: "HTML", percents: "75", color: "danger" },
-            css: { name: "CSS", percents: "50", color: "primary" }
-        },
+            { name: "GIT", percents: "60", color: "dark" },
+            { name: "HTML", percents: "75", color: "danger" },
+            { name: "CSS", percents: "50", color: "primary" }
+        ],
         contacts: [
             { name: "Github", url: "https://github.com/AndreyDid" },
             { name: "Email", url: "https://andreydidenk0@yandex.ru" },

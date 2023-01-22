@@ -47,17 +47,20 @@ const DeveloperPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="card mt-3">
-                            <ul className="list-group list-group-flush">
+                        <div className="card mt-3 container">
+                            <ul className="list-group list-group-flush row">
                                 {developer.contacts.map((c) => (
                                     <li
                                         key={c.url}
                                         className="list-group-item d-flex justify-content-between align-items-center flex-wrap"
                                     >
                                         <h6 className="mb-0">{c.name}</h6>
-                                        <span className="text-secondary">
+                                        <a
+                                            href={c.url}
+                                            className="text-secondary text-truncate w-50"
+                                        >
                                             {c.url}
-                                        </span>
+                                        </a>
                                     </li>
                                 ))}
                             </ul>
