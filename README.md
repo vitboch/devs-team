@@ -28,13 +28,17 @@
 
 ### `PropTypes`
 
+## Как запустить проект
+
+
 ## В разработке принимали участие:
+
 
 [Виталий Бочкарев](https://github.com/vitboch), team-lead
 
 [Святослав Орлов](https://github.com/orlov11)
 
-[Никита Лукиных]()
+[Никита Лукиных](https://github.com/NikaLuki)
 
 [Дмитрий Баулин](https://github.com/nonfermata)
 
