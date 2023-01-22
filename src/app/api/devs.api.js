@@ -12,23 +12,26 @@ const devs = [
         birthday: "1981-10-29",
         photo: vitaly,
         about: "С удовольствием обучаюсь новым технологиям, эксперементирую в JavaScript, имею опыт работы в команде разработчиков, умею объяснить сложное на простых примерах. Хобби: испанская гитара, горный велосипед и беговые лыжи.",
-        technologies: {
-            react: { name: "React", percents: "55", color: "info" },
-            javascript: {
+        technologies: [
+            { name: "React", percents: "75", color: "info" },
+            {
                 name: "JavaScript",
-                percents: "75",
+                percents: "90",
                 color: "warning"
             },
-            git: { name: "GIT", percents: "65", color: "dark" },
-            html: { name: "HTML", percents: "85", color: "danger" },
-            css: { name: "CSS", percents: "75", color: "primary" }
-        },
-        contacts: {
-            github: "https://github.com/vitboch",
-            email: "boch.vitaly@gmail.com",
-            telegram: "https://t.me/Vitaly_Bochkarev",
-            discord: "https://discordapp.com/users/989563164041551912/"
-        },
+            { name: "GIT", percents: "50", color: "dark" },
+            { name: "HTML", percents: "100", color: "danger" },
+            { name: "CSS", percents: "95", color: "primary" }
+        ],
+        contacts: [
+            { name: "Github", url: "https://github.com/vitboch" },
+            { name: "Email", url: "boch.vitaly@gmail.com" },
+            { name: "Telegram", url: "https://t.me/Vitaly_Bochkarev" },
+            {
+                name: "Discord",
+                url: "https://discordapp.com/users/989563164041551912/"
+            }
+        ],
         completed: [
             "Настройка начального проекта",
             "Качество кода",
@@ -43,23 +46,26 @@ const devs = [
         birthday: "1997-09-29",
         photo: svyat,
         about: "Быстро обучаюсь новому, достигаю поставленых целей. Люблю пешие прогулки, фотографировать и стильно одеваться. Праактикую осознаный подход к жизни. ",
-        technologies: {
-            react: { name: "React", percents: "60", color: "info" },
-            javascript: {
+        technologies: [
+            { name: "React", percents: "75", color: "info" },
+            {
                 name: "JavaScript",
-                percents: "70",
+                percents: "90",
                 color: "warning"
             },
-            git: { name: "GIT", percents: "60", color: "dark" },
-            html: { name: "HTML", percents: "80", color: "danger" },
-            css: { name: "CSS", percents: "80", color: "primary" }
-        },
-        contacts: {
-            github: "https://github.com/orlov11",
-            email: "svyatoslav.orlov11@gmail.com",
-            telegram: "https://t.me/ProductL22",
-            discord: "https://discordapp.com/users/827158247675920414/"
-        },
+            { name: "GIT", percents: "50", color: "dark" },
+            { name: "HTML", percents: "100", color: "danger" },
+            { name: "CSS", percents: "95", color: "primary" }
+        ],
+        contacts: [
+            { name: "Github", url: "https://github.com/orlov11" },
+            { name: "Email", url: "svyatoslav.orlov11@gmail.com" },
+            { name: "Telegram", url: "https://t.me/ProductL22" },
+            {
+                name: "Discord",
+                url: "https://discordapp.com/users/827158247675920414/"
+            }
+        ],
         completed: ["Страница участника"]
     },
     {
@@ -69,23 +75,26 @@ const devs = [
         birthday: "2000-01-26",
         photo: nikita,
         about: "Я Frontend разработчик. Люблю работать в команде, интересуюсь Гейм-дизайном.  Также, хочу развиваться, как руководитель. Моя цель - создать свою собственную студию по разработки.",
-        technologies: {
-            react: { name: "React", percents: "100", color: "info" },
-            javascript: {
+        technologies: [
+            { name: "React", percents: "75", color: "info" },
+            {
                 name: "JavaScript",
-                percents: "100",
+                percents: "90",
                 color: "warning"
             },
-            git: { name: "GIT", percents: "100", color: "dark" },
-            html: { name: "HTML", percents: "100", color: "danger" },
-            css: { name: "CSS", percents: "100", color: "primary" }
-        },
-        contacts: {
-            github: "https://github.com/NikaLuki",
-            email: "nikita.lukinykh.s@gmail.com",
-            telegram: "https://t.me/NikaLuki",
-            discord: "https://discordapp.com/users/297374377866035211/"
-        },
+            { name: "GIT", percents: "50", color: "dark" },
+            { name: "HTML", percents: "100", color: "danger" },
+            { name: "CSS", percents: "95", color: "primary" }
+        ],
+        contacts: [
+            { name: "Github", url: "https://github.com/NikaLuki" },
+            { name: "Email", url: "nikita.lukinykh.s@gmail.com" },
+            { name: "Telegram", url: "https://t.me/NikaLuki" },
+            {
+                name: "Discord",
+                url: "https://discordapp.com/users/297374377866035211/"
+            }
+        ],
         completed: ["Структура сайта", "Роутинг", "Navbar", "Breadcrumbs"]
     },
     {
@@ -95,23 +104,27 @@ const devs = [
         birthday: "1975-09-10",
         photo: dima,
         about: "Требователен к себе. Нравится постоянно расти и развиваться. Люблю грамотность, как в русском и английском, так и в написании кода. Ценю в людях открытость и легкость. Играю в бильярд. Пишу электронную музыку.",
-        technologies: {
-            react: { name: "React", percents: "75", color: "info" },
-            javascript: {
+        technologies: [
+            { name: "React", percents: "75", color: "info" },
+            {
                 name: "JavaScript",
                 percents: "90",
                 color: "warning"
             },
-            git: { name: "GIT", percents: "50", color: "dark" },
-            html: { name: "HTML", percents: "100", color: "danger" },
-            css: { name: "CSS", percents: "95", color: "primary" }
-        },
-        contacts: {
-            github: "https://github.com/nonfermata",
-            email: "nonfermata@gmail.com",
-            telegram: "https://t.me/febrecords",
-            discord: "https://discordapp.com/users/990199120285302815/"
-        },
+            { name: "GIT", percents: "50", color: "dark" },
+            { name: "HTML", percents: "100", color: "danger" },
+            { name: "CSS", percents: "95", color: "primary" }
+        ],
+
+        contacts: [
+            { name: "Github", url: "https://github.com/nonfermata" },
+            { name: "Email", url: "nonfermata@gmail.com" },
+            { name: "Telegram", url: "https://t.me/febrecords" },
+            {
+                name: "Discord",
+                url: "https://discordapp.com/users/990199120285302815/"
+            }
+        ],
         completed: ["Progress", "Footer"]
     },
     {
@@ -132,12 +145,15 @@ const devs = [
             html: { name: "HTML", percents: "75", color: "danger" },
             css: { name: "CSS", percents: "50", color: "primary" }
         },
-        contacts: {
-            github: "https://github.com/AndreyDid",
-            email: "https://andreydidenk0@yandex.ru",
-            telegram: "https://t.me/AndreyDidenk0",
-            discord: "https://discordapp.com/users/514663030567731213/"
-        },
+        contacts: [
+            { name: "Github", url: "https://github.com/AndreyDid" },
+            { name: "Email", url: "https://andreydidenk0@yandex.ru" },
+            { name: "Telegram", url: "https://t.me/AndreyDidenk0" },
+            {
+                name: "Discord",
+                url: "https://discordapp.com/users/514663030567731213/"
+            }
+        ],
         completed: ["Button", "Badge", "Slider", "AboutProject"]
     }
 ];
