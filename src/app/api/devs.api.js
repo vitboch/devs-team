@@ -141,4 +141,13 @@ const devs = [
     }
 ];
 
-export default devs;
+const fetchAll = () =>
+    new Promise((resolve) => {
+        window.setTimeout(function () {
+            resolve(devs);
+        }, 1000);
+    });
+
+export default {
+    fetchAll
+};

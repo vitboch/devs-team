@@ -1,13 +1,15 @@
 import React from "react";
-import devs from "../../api/devs.api";
+import { useDeveloper } from "../../hooks/useDevelopers";
+// import devs from "../../api/devs.api";
 import Card from "../common/card";
 import Slider from "../ui/slider";
 
 const MainPage = () => {
+    const { developers, isLoading } = useDeveloper();
     return (
         <>
             <div className="fw-light text-center mb-4">
-                <Slider/>
+                <Slider />
             </div>
             <main>
                 <section className="py-5 container p-3">
@@ -37,9 +39,11 @@ const MainPage = () => {
                 <div className="album py-5 bg-light p-3">
                     <div className="container">
                         <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
-                            {devs.map((dev) => (
-                                <Card key={dev._id} {...dev} />
-                            ))}
+                            {!isLoading
+                                ? developers.map((dev) => (
+                                      <Card key={dev._id} {...dev} />
+                                  ))
+                                : "Loader..."}
                         </div>
                     </div>
                 </div>
