@@ -9,10 +9,10 @@ const AboutProject = () => {
                     и креативно рассказать о команде в целом и о каждом участнике отдельно.</p>
             </div>
             <div>
-                <h1 className="fw-light text-center mb-4">Техническое задание</h1>
+                <h1 className="fw-light text-center mb-4">Мы реализовали:</h1>
             </div>
             <div>
-                <h3 className="mt-3">Минимальный набор страниц:</h3>
+                <h3 className="mt-3">Страницы:</h3>
                 <hr/>
                 <div className="accordion accordion-flush" id="accordionFlushExample1">
                     <div className="accordion-item">
@@ -27,8 +27,9 @@ const AboutProject = () => {
                              aria-labelledby="flush-heading" data-bs-parent="#accordionFlushExample">
                             <div className="accordion-body">
                                 <ul>
-                                    <li>Отобразить информацию о команде (минимум - просто текстовая информация)</li>
-                                    <li>Представить каждого участника команды (список с карточками)</li>
+                                    <li>Отображается слайдер показывающий информацию о веб-технологиях</li>
+                                    <li>Отображается информацию о команде</li>
+                                    <li>Представлен каждый участник команды</li>
                                 </ul>
                             </div>
                         </div>
@@ -45,7 +46,7 @@ const AboutProject = () => {
                              aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                             <div className="accordion-body">
                                 <ul>
-                                    <li>Отобразить информацию о человеке</li>
+                                    <li>Отображется информаця о человеке</li>
                                     <ul>
                                         <li>Имя, фамилия</li>
                                         <li>Возраст</li>
@@ -54,20 +55,16 @@ const AboutProject = () => {
                                         <li>Социальные сети</li>
                                         <li>Чем занимался в разработке данного проекта</li>
                                     </ul>
-                                    <li>Использовать общие компоненты</li>
+                                    <li>Использовались общие компоненты</li>
                                     <ul>
                                         <li className="fw-bold m-0">Progress</li>
-                                        <p>Указываем, какие технологии знает человек и на сколько процентов</p>
+                                        <p>Указывает какие технологии знает человек и на сколько процентов</p>
                                         <li className="fw-bold m-0">Badge</li>
-                                        <p>Например можно пометить, что человек является тимлидом</p>
-                                        <li className="fw-bold">Свой компонент (по желанию)</li>
-                                        <li className="fw-bold">Slider (по желанию)</li>
+                                        <p>Отображает роль человека в комманде</p>
+                                        <li className="fw-bold m-0">Button</li>
+                                        <p>Дает возможность перейти на страницу пользователя и добавления в закладки</p>
                                     </ul>
-                                    <li>Реализовать возможность добавления в избранное (кнопка)
-                                        Добавление происходит в localStorage, избранные участники должны
-                                        отображаться в
-                                        виде карточек на странице &quot;Избранные&quot;.
-                                        Также должна быть возможность удалить из избранных.
+                                    <li>Реализованна возможность добавления в избранное.
                                     </li>
                                 </ul>
                             </div>
@@ -85,17 +82,14 @@ const AboutProject = () => {
                              aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                             <div className="accordion-body">
                                 <ul>
-                                    <li>Вывод избранных участников из localStorage (список с карточками)</li>
-                                    <li>Возможность удаления из избранного</li>
+                                    <li>Отображает избранных участников из localStorage</li>
+                                    <li>Возможность удаления участников из избранного</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <h3 className="mt-5">Обязательные компоненты:</h3>
+                    <h3 className="mt-5">Компоненты:</h3>
                 </div>
-                <p>Вы можете улучшать текущие компоненты на свое усмотрение, но необходимо сохранить минимальный
-                    базовый
-                    функционал.</p>
                 <hr/>
                 <div className="accordion accordion-flush" id="accordionFlushExample2">
                     <div className="accordion-item">
@@ -115,10 +109,6 @@ const AboutProject = () => {
                                     <li>Название шкалы</li>
                                     <li>Цвет</li>
                                 </ul>
-                                <p className="fw-bold">Дополнительно*</p>
-                                <p>Добавить передачу параметра type (например, bar, circle и тд). С помощью него
-                                    можно
-                                    будет выбрать тип</p>
                             </div>
                         </div>
                     </div>
@@ -138,7 +128,7 @@ const AboutProject = () => {
                                     <li>Цвет</li>
                                     <li>Функцию, при клике</li>
                                     <li>Название кнопки</li>
-                                    <li>Тип (скругленные углы или квадратные) *дополнительно</li>
+                                    <li>Тип (скругленные углы или квадратные)</li>
                                 </ul>
                             </div>
                         </div>
@@ -158,8 +148,8 @@ const AboutProject = () => {
                                 <ul>
                                     <li>Имя, фамилия</li>
                                     <li>Возраст</li>
-                                    <li>Фотография (если нет фотографии, то любимая картинка)</li>
-                                    <li>О себе (2-3 предложения)</li>
+                                    <li>Фотография</li>
+                                    <li>Краткую информацию о человеке</li>
                                     <li>Кнопка &quot;открыть&quot;</li>
                                     <li>Кнопка &quot;добавить в избранное&quot;</li>
                                 </ul>
@@ -177,7 +167,7 @@ const AboutProject = () => {
                         <div id="flush-collapseSeven" className="accordion-collapse collapse"
                              aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
                             <div className="accordion-body">
-                                <p>Хлебные крошки до текущей страницы</p>
+                                <li>Хлебные крошки до текущей страницы</li>
                                 <p className="fw-lighter">Home / Library / Data</p>
                             </div>
                         </div>
@@ -212,24 +202,24 @@ const AboutProject = () => {
                         <div id="flush-collapseNine" className="accordion-collapse collapse"
                              aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample3">
                             <div className="accordion-body">
-                                <p>Навигационное меню со всеми страницами сайта</p>
+                                <li>Навигационное меню со всеми страницами сайта</li>
                             </div>
                         </div>
                     </div>
-                    <h3 className="mt-5">Компоненты по желанию:</h3>
+                    <h3 className="mt-5">Дополнительно реализовано:</h3>
                     <hr/>
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="flush-headingTen">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseTen" aria-expanded="false"
                                     aria-controls="flush-collapseTen">
-                                Свой компонент
+                                Footer
                             </button>
                         </h2>
                         <div id="flush-collapseTen" className="accordion-collapse collapse"
                              aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
                             <div className="accordion-body">
-                                <p>Если у вас есть идеи для своих компонентов, то вы можете их реализовать</p>
+                                <li>Выделяет нижний колонтитул (“подвал”) веб-сайта</li>
                             </div>
                         </div>
                     </div>
@@ -244,7 +234,22 @@ const AboutProject = () => {
                         <div id="flush-collapseEleven" className="accordion-collapse collapse"
                              aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
                             <div className="accordion-body">
-                                <p>Слайдер с какими-либо элементами (например, работы из портфолио)</p>
+                                <li>Слайдер показывающий информацию о веб-технологиях</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="accordion-item">
+                        <h2 className="accordion-header" id="flush-headingTwelve">
+                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwelve" aria-expanded="false"
+                                    aria-controls="flush-collapseTwelve">
+                                Loader
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwelve" className="accordion-collapse collapse"
+                             aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+                            <div className="accordion-body">
+                                <li>Отображается пока страница загружается</li>
                             </div>
                         </div>
                     </div>
