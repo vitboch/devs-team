@@ -3,9 +3,14 @@ import { useDeveloper } from "../../hooks/useDevelopers";
 // import devs from "../../api/devs.api";
 import Card from "../common/card";
 import Slider from "../ui/slider";
+import PropTypes from "prop-types";
 
-const MainPage = () => {
+const MainPage = ({ favourites, handleFavourites }) => {
     const { developers, isLoading } = useDeveloper();
+    const getIsFavouriteStatus = (id) => {
+        return favourites.some((item) => item === id);
+    };
+
     return (
         <>
             <div className="fw-light text-center mb-4">
@@ -41,7 +46,14 @@ const MainPage = () => {
                         <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
                             {!isLoading
                                 ? developers.map((dev) => (
-                                      <Card key={dev._id} {...dev} />
+                                      <Card
+                                          key={dev._id}
+                                          {...dev}
+                                          isFavourite={getIsFavouriteStatus(
+                                              dev._id
+                                          )}
+                                          handleFavourites={handleFavourites}
+                                      />
                                   ))
                                 : "Loader..."}
                         </div>
@@ -60,6 +72,11 @@ const MainPage = () => {
             </main>
         </>
     );
+};
+
+MainPage.propTypes = {
+    favourites: PropTypes.array,
+    handleFavourites: PropTypes.func
 };
 
 export default MainPage;
