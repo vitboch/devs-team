@@ -1,17 +1,13 @@
-import devs from "../api/devs.api";
-
 export const getStorage = () => {
     if (
         localStorage.getItem("favourites") &&
         localStorage.getItem("favourites") !== "[]"
     ) {
-        return JSON.parse(localStorage.getItem("favourites")).map((id) =>
-            devs.find((dev) => dev._id === id)
-        );
+        return JSON.parse(localStorage.getItem("favourites"));
     } else return [];
 };
 
-export const changeFavouritesIds = (id) => {
+export const changeStorage = (id) => {
     if (
         localStorage.getItem("favourites") &&
         localStorage.getItem("favourites") !== "[]"

@@ -4,7 +4,16 @@ import { Link } from "react-router-dom";
 import Button from "../common/button";
 import getAge from "../../utils/getAge";
 
-const Card = ({ _id, firstName, lastName, birthday, photo, about }) => {
+const Card = ({
+    _id,
+    firstName,
+    lastName,
+    birthday,
+    photo,
+    about,
+    isFavourite,
+    handleFavourites
+}) => {
     return (
         <div className="col">
             <div className="shadow-sm card">
@@ -26,10 +35,16 @@ const Card = ({ _id, firstName, lastName, birthday, photo, about }) => {
                                     />
                                 </Link>
                                 <Button
-                                    label="добавить в избранное"
+                                    label={
+                                        isFavourite
+                                            ? "удалить из избранного"
+                                            : "добавить в избранное"
+                                    }
                                     size="btn-sm"
-                                    color="light"
-                                    onClick={() => console.log("Add id", _id)}
+                                    color={isFavourite ? "secondary" : "light"}
+                                    onClick={() => {
+                                        handleFavourites(_id);
+                                    }}
                                 />
                             </div>
                         </div>
@@ -46,7 +61,9 @@ Card.propTypes = {
     lastName: PropTypes.string.isRequired,
     birthday: PropTypes.string.isRequired,
     photo: PropTypes.string.isRequired,
-    about: PropTypes.string.isRequired
+    about: PropTypes.string.isRequired,
+    isFavourite: PropTypes.bool,
+    handleFavourites: PropTypes.func
 };
 
 export default Card;
