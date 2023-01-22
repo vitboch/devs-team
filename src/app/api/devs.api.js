@@ -1,8 +1,8 @@
-import avatar from "../../assets/images/avatar.jpeg";
 import vitaly from "../../assets/images/vitaly.jpeg";
 import dima from "../../assets/images/dima.jpeg";
 import andrey from "../../assets/images/andrey.jpg";
 import svyat from "../../assets/images/svyat.jpeg";
+import nikita from "../../assets/images/nikita.jpg";
 
 const devs = [
     {
@@ -42,7 +42,7 @@ const devs = [
         lastName: "Орлов",
         birthday: "1997-09-29",
         photo: svyat,
-        about: "О себе",
+        about: "Быстро обучаюсь новому, достигаю поставленых целей. Люблю пешие прогулки, фотографировать и стильно одеваться. Праактикую осознаный подход к жизни. ",
         technologies: {
             react: { name: "React", percents: "60", color: "info" },
             javascript: {
@@ -66,9 +66,9 @@ const devs = [
         _id: "34512",
         firstName: "Никита",
         lastName: "Лукиных",
-        birthday: "2000-01-01",
-        photo: avatar,
-        about: "О себе",
+        birthday: "2000-01-26",
+        photo: nikita,
+        about: "Я Frontend разработчик. Люблю работать в команде, интересуюсь Гейм-дизайном.  Также, хочу развиваться, как руководитель. Моя цель - создать свою собственную студию по разработки.",
         technologies: {
             react: { name: "React", percents: "100", color: "info" },
             javascript: {
@@ -81,10 +81,10 @@ const devs = [
             css: { name: "CSS", percents: "100", color: "primary" }
         },
         contacts: {
-            github: "https://github.com/",
-            email: "dev@develop.dev",
-            telegram: "https://t.me/",
-            discord: "https://discordapp.com/users/хххххххххххххххххх/"
+            github: "https://github.com/NikaLuki",
+            email: "nikita.lukinykh.s@gmail.com",
+            telegram: "https://t.me/NikaLuki",
+            discord: "https://discordapp.com/users/297374377866035211/"
         },
         completed: ["Структура сайта", "Роутинг", "Navbar", "Breadcrumbs"]
     },
@@ -142,4 +142,13 @@ const devs = [
     }
 ];
 
-export default devs;
+const fetchAll = () =>
+    new Promise((resolve) => {
+        window.setTimeout(function () {
+            resolve(devs);
+        }, 1000);
+    });
+
+export default {
+    fetchAll
+};
