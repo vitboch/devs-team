@@ -7,7 +7,7 @@ const MainPage = () => {
     return (
         <>
             <div className="fw-light text-center mb-4">
-                <Slider/>
+                <Slider />
             </div>
             <main>
                 <section className="py-5 container p-3">
@@ -38,7 +38,11 @@ const MainPage = () => {
                     <div className="container">
                         <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
                             {devs.map((dev) => (
-                                <Card key={dev._id} {...dev} />
+                                <Card
+                                    key={dev._id}
+                                    {...dev}
+                                    parent="home"
+                                />
                             ))}
                         </div>
                     </div>

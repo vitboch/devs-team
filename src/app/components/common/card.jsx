@@ -1,10 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Button from "../common/button";
 import getAge from "../../utils/getAge";
+import { changeFavouritesIds } from "../../utils/favouritesUtils";
 
-const Card = ({ _id, firstName, lastName, birthday, photo, about }) => {
+const Card = ({
+    _id,
+    firstName,
+    lastName,
+    birthday,
+    photo,
+    about,
+    parent,
+    onChangeFavourite
+}) => {
+    const [isFavourite, setIsFavourite] = useState(
+        localStorage.getItem("favourites") &&
+            JSON.parse(localStorage.getItem("favourites")).some(
+                (item) => item === _id
+            )
+    );
+    const handleChangeFavourite = () => {
+        changeFavouritesIds(_id);
+        setIsFavourite(!isFavourite);
+        if (parent === "favourites") {
+            onChangeFavourite(_id);
+        }
+    };
+    const getLabel = () => {
+        if (parent === "home") {
+            return isFavourite
+                ? "удалить из избранного"
+                : "добавить в избранное";
+        } else if (parent === "favourites") {
+            return "удалить из избранного";
+        }
+    };
     return (
         <div className="col">
             <div className="shadow-sm card">
@@ -26,10 +58,10 @@ const Card = ({ _id, firstName, lastName, birthday, photo, about }) => {
                                     />
                                 </Link>
                                 <Button
-                                    label="добавить в избранное"
+                                    label={getLabel()}
                                     size="btn-sm"
-                                    color="light"
-                                    onClick={() => console.log("Add id", _id)}
+                                    color={isFavourite ? "secondary" : "light"}
+                                    onClick={handleChangeFavourite}
                                 />
                             </div>
                         </div>
@@ -46,7 +78,9 @@ Card.propTypes = {
     lastName: PropTypes.string.isRequired,
     birthday: PropTypes.string.isRequired,
     photo: PropTypes.string.isRequired,
-    about: PropTypes.string.isRequired
+    about: PropTypes.string.isRequired,
+    parent: PropTypes.string,
+    onChangeFavourite: PropTypes.func
 };
 
 export default Card;
