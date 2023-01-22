@@ -1,5 +1,6 @@
 import avatar from "../../assets/images/avatar.jpeg";
 import vitaly from "../../assets/images/vitaly.jpeg";
+import dima from "../../assets/images/dima.jpg";
 import andrey from "../../assets/images/andrey.jpg";
 
 import svyat from "../../assets/images/svyat.jpg";
@@ -98,29 +99,27 @@ const devs = [
         _id: "45123",
         firstName: "Дмитрий",
         lastName: "Баулин",
-        role: "Участнк",
-        color: "dark",
         birthday: "2000-01-01",
-        photo: avatar,
+        photo: dima,
         about: "О себе",
         technologies: {
-            react: { name: "React", percents: "100", color: "info" },
+            react: { name: "React", percents: "75", color: "info" },
             javascript: {
                 name: "JavaScript",
-                percents: "100",
+                percents: "90",
                 color: "warning"
             },
-            git: { name: "GIT", percents: "100", color: "dark" },
+            git: { name: "GIT", percents: "50", color: "dark" },
             html: { name: "HTML", percents: "100", color: "danger" },
-            css: { name: "CSS", percents: "100", color: "primary" }
+            css: { name: "CSS", percents: "95", color: "primary" }
         },
         contacts: {
-            github: "https://github.com/",
-            email: "dev@develop.dev",
-            telegram: "https://t.me/",
-            discord: "https://discordapp.com/users/хххххххххххххххххх/"
+            github: "https://github.com/nonfermata",
+            email: "nonfermata@gmail.com",
+            telegram: "https://t.me/febrecords",
+            discord: "https://discordapp.com/users/990199120285302815/"
         },
-        completed: ["Progress"]
+        completed: ["Progress", "Footer"]
     },
     {
         _id: "51234",
