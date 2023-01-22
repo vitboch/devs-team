@@ -25,7 +25,7 @@ const Breadcrumbs = () => {
                             className={`breadcrumb-item active`}
                             aria-current="page"
                         >
-                            <NavLink to={"/"}>Home</NavLink>
+                            <NavLink to={"/"}>Главная</NavLink>
                         </li>
                         {pathnames.map((crumb, i) => {
                             const isLast = i === pathnames.length - 1;

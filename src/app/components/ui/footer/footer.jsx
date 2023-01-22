@@ -9,7 +9,7 @@ const Footer = () => {
             <div className={styles.footerContent}>
                 <div className={styles.footerCopyright}>
                     <p>
-                        <i className=" bi bi-bug-fill pe-3 fs-5"></i>© 2022-2023
+                        <i className=" bi bi-bug-fill pe-3 fs-5"></i>© 2023
                         DevsTeam
                     </p>
                 </div>
