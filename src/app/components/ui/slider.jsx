@@ -11,6 +11,10 @@ const Slider = () => {
                             aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active" data-bs-interval="5000">
@@ -18,15 +22,24 @@ const Slider = () => {
                              className="d-block w-100" alt="..."/>
                         <div className="carousel-caption d-none d-md-block">
                             <h5>HTML (HyperText Markup Language)</h5>
-                            <p className="te">Cтандартизированный язык гипертекстовой разметки документов для просмотра веб-страниц в браузере.</p>
+                            <p className="m-0">Cтандартизированный язык гипертекстовой разметки документов для просмотра веб-страниц в браузере.</p>
                         </div>
                     </div>
+                    <div className="carousel-item active" data-bs-interval="5000">
+                        <img src="https://sun9-13.userapi.com/impf/c851520/v851520363/12e155/1hHUqzbS-xE.jpg?size=1280x720&quality=96&sign=ecef10666a89eb6d39b2badf1c5e90c6&type=album"
+                             className="d-block w-100" alt="..."/>
+                        <div className="carousel-caption d-none d-md-block">
+                            <h5>CSS</h5>
+                            <p className="m-0">Язык описания внешнего вида HTML-документа.</p>
+                        </div>
+                    </div>
+
                     <div className="carousel-item" data-bs-interval="5000">
                         <img src="https://i09.fotocdn.net/s115/c5d34728f48f0c02/public_pin_l/2627484884.jpg"
                              className="d-block w-100" alt="..."/>
                         <div className="carousel-caption d-none d-md-block">
                             <h5>JavaScript</h5>
-                            <p>Это язык программирования, который используют разработчики для создания интерактивных веб-страниц. Функции JavaScript могут улучшить удобство взаимодействия пользователя с веб-сайтом: от обновления ленты новостей в социальных сетях и до отображения анимации и интерактивных карт.</p>
+                            <p className="m-0">Это язык программирования, который используют разработчики для создания интерактивных веб-страниц.</p>
                         </div>
                     </div>
                     <div className="carousel-item" data-bs-interval="5000">
@@ -34,7 +47,15 @@ const Slider = () => {
                              className="d-block w-100" alt="..."/>
                         <div className="carousel-caption d-none d-md-block">
                             <h5>React</h5>
-                            <p>Это библиотека JavaScript с открытым кодом для создания внешних пользовательских интерфейсов. В отличие от других библиотек JavaScript, предоставляющих полноценную платформу приложений, React ориентируется исключительно на создание представлений приложений через инкапсулированные единицы (называются компонентами), которые сохраняют состояние и генерируют элементы пользовательского интерфейса.</p>
+                            <p className="m-0">Это библиотека JavaScript с открытым кодом для создания внешних пользовательских интерфейсов.</p>
+                        </div>
+                    </div>
+                    <div className="carousel-item" data-bs-interval="5000">
+                        <img src="https://img1.goodfon.ru/original/1280x720/6/e2/cat-mini-black.jpg"
+                             className="d-block w-100" alt="..."/>
+                        <div className="carousel-caption d-none d-md-block">
+                            <h5>GitHub</h5>
+                            <p className="m-0">Крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки.</p>
                         </div>
                     </div>
                 </div>
