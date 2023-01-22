@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation, useParams } from "react-router-dom";
-import devs from "../../api/devs.api";
+import { useDeveloper } from "../../hooks/useDevelopers";
 
 const Breadcrumbs = () => {
     const [nameDev, setName] = useState();
     const { pathname } = useLocation();
     const { devId } = useParams();
+    const { getDeveloperById, isLoading } = useDeveloper();
     const pathnames = pathname.split("/").filter((i) => i);
     useEffect(() => {
-        if (devId) {
-            const dev = devs.find((dev) => dev._id === devId);
+        if (devId && !isLoading) {
+            const dev = getDeveloperById(devId);
             setName(dev ? dev.firstName + " " + dev.lastName : "");
         }
-    }, [pathname]);
+    }, [pathname, isLoading]);
 
     const generateCrumbs = (pathnames) => {
         if (pathnames.length > 0) {
@@ -24,7 +25,7 @@ const Breadcrumbs = () => {
                             className={`breadcrumb-item active`}
                             aria-current="page"
                         >
-                            <NavLink to={"/"}>Home</NavLink>
+                            <NavLink to={"/"}>Главная</NavLink>
                         </li>
                         {pathnames.map((crumb, i) => {
                             const isLast = i === pathnames.length - 1;

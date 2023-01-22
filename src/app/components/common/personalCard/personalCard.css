@@ -1,0 +1,101 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 10px 40px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.title button {
+    border: none;
+    background-color: none;
+}
+
+.personal-card__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+    .personal-card__wrapper {
+        flex-direction: column;
+    }
+}
+.personal-card a {
+    color: black;
+}
+.personal-card__title {
+    text-align: center;
+}
+.personal-card__img {
+    width: 500px;
+    height: 600px;
+}
+.personal-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 600px) {
+    .personal-card__img {
+        margin: 0 auto;
+        max-width: 350px;
+    }
+}
+@media (max-width: 1080px) {
+    .personal-card__img {
+        margin: 0 auto;
+        width: 450px;
+        height: 550px;
+    }
+}
+@media (max-width: 800px) {
+    .personal-card__img {
+        margin: 0 auto;
+        max-width: 350px;
+        width: 350px;
+        height: 450px;
+    }
+}
+.personal-card__descr {
+    display: flex;
+    padding-top: 20px;
+    width: 550px;
+    flex-direction: column;
+    gap: 25px;
+}
+.personal-card__descr span {
+    font-size: 16px;
+    font-weight: 700;
+}
+@media (max-width: 600px) {
+    .personal-card__descr {
+        margin: 0 auto;
+        max-width: 350px;
+    }
+}
+@media (max-width: 1080px) {
+    .personal-card__descr {
+        max-width: 450px;
+        gap: 15px;
+    }
+}
+@media (max-width: 800px) {
+    .personal-card__descr {
+        max-width: 350px;
+        gap: 15px;
+    }
+}
+@media (max-width: 600px) {
+    .personal-card__technologies {
+        margin: 0 auto;
+        max-width: 350px;
+    }
+}
+@media (max-width: 996px) {
+    .personal-card__technologies {
+        margin: 0 auto;
+    }
+}

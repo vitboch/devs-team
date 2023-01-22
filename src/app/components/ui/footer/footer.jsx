@@ -5,48 +5,46 @@ import styles from "./footer.module.css";
 
 const Footer = () => {
     return (
-        <div className={"bg-light px-5 py-4 " + styles.footer}>
-            <div className="d-flex justify-content-between align-items-center">
-                <div>
+        <div className={styles.footer}>
+            <div className={styles.footerContent}>
+                <div className={styles.footerCopyright}>
                     <p>
-                        <i className=" bi bi-bug-fill pe-3 fs-5"></i>© 2022-2023
+                        <i className=" bi bi-bug-fill pe-3 fs-5"></i>© 2023
                         DevsTeam
                     </p>
                 </div>
-                <div className="d-flex gap-3 align-items-center">
+                <div className={styles.footerLinksWrap}>
                     <a
                         href="https://github.com/vitboch/devs-team"
                         title="Проект на GitHub"
                         rel="noopener noreferrer"
                         target="_blank"
-                        className={
-                            "d-inline-flex gap-2 text-decoration-none " +
-                            styles.footerLink
-                        }
+                        className={styles.footerLink}
                     >
                         <img
                             className={styles.footerIcon}
                             src={gitHabIcon}
                             alt="GitHub"
                         />
-                        Исходный код
+                        <span className={styles.footerLinkName}>
+                            Исходный код
+                        </span>
                     </a>
                     <a
                         href="https://result.school/"
                         title="Обучающая платформа React.School"
                         rel="noopener noreferrer"
                         target="_blank"
-                        className={
-                            "d-inline-flex gap-2 text-decoration-none " +
-                            styles.footerLink
-                        }
+                        className={styles.footerLink}
                     >
                         <img
                             className={styles.footerIcon}
                             src={resSchoolIcon}
                             alt="Result.School"
                         />
-                        Наши наставники
+                        <span className={styles.footerLinkName}>
+                            Наши наставники
+                        </span>
                     </a>
                 </div>
             </div>

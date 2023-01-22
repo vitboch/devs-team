@@ -3,7 +3,7 @@ import Badge from "../../common/badge";
 import Progress from "../../common/progress";
 import PropTypes from "prop-types";
 import devs from "../../../api/devs.api";
-import "./personalCard.scss";
+import "./personalCard.css";
 import findUser from "../../../utils/findUser";
 import getAge from "../../../utils/getAge";
 

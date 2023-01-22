@@ -3,8 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
     const navItems = [
-        { name: "Home", path: "" },
-        { name: "Favourites", path: "favourites" }
+        { name: "Главная", path: "" },
+        { name: "Избранное", path: "favourites" },
+        { name: "О проекте", path: "aboutProject" }
     ];
 
     return (
@@ -34,7 +35,7 @@ const NavBar = () => {
                             className="offcanvas-header "
                             id="offcanvasNavbarLabel"
                         >
-                            Menu
+                            Меню
                         </h3>
                         <button
                             type="button"

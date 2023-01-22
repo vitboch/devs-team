@@ -1,20 +1,19 @@
-import avatar from "../../assets/images/avatar.jpeg";
 import vitaly from "../../assets/images/vitaly.jpeg";
-import dima from "../../assets/images/dima.jpg";
+import dima from "../../assets/images/dima.jpeg";
 import andrey from "../../assets/images/andrey.jpg";
-
-import svyat from "../../assets/images/svyat.jpg";
+import svyat from "../../assets/images/svyat.jpeg";
+import nikita from "../../assets/images/nikita.jpg";
 
 const devs = [
     {
         _id: "12345",
         firstName: "Виталий",
         lastName: "Бочкарев",
+        birthday: "1981-10-29",
         role: "Тимлид",
         color: "primary",
-        birthday: "1981-10-29",
         photo: vitaly,
-        about: "О себе",
+        about: "С удовольствием обучаюсь новым технологиям, эксперементирую в JavaScript, имею опыт работы в команде разработчиков, умею объяснить сложное на простых примерах. Хобби: испанская гитара, горный велосипед и беговые лыжи.",
         technologies: {
             react: { name: "React", percents: "55", color: "info" },
             javascript: {
@@ -30,7 +29,7 @@ const devs = [
             github: "https://github.com/vitboch",
             email: "boch.vitaly@gmail.com",
             telegram: "https://t.me/Vitaly_Bochkarev",
-            discord: "https://discordapp.com/users/хххххххххххххххххх/"
+            discord: "https://discordapp.com/users/989563164041551912/"
         },
         completed: [
             "Настройка начального проекта",
@@ -47,7 +46,7 @@ const devs = [
         color: "danger",
         birthday: "1997-09-29",
         photo: svyat,
-        about: "О себе",
+        about: "Быстро обучаюсь новому, достигаю поставленых целей. Люблю пешие прогулки, фотографировать и стильно одеваться. Праактикую осознаный подход к жизни. ",
         technologies: {
             react: { name: "React", percents: "60", color: "info" },
             javascript: {
@@ -73,9 +72,9 @@ const devs = [
         lastName: "Лукиных",
         role: "Участнк",
         color: "warning",
-        birthday: "2000-01-01",
-        photo: avatar,
-        about: "О себе",
+        birthday: "2000-01-26",
+        photo: nikita,
+        about: "Я Frontend разработчик. Люблю работать в команде, интересуюсь Гейм-дизайном.  Также, хочу развиваться, как руководитель. Моя цель - создать свою собственную студию по разработки.",
         technologies: {
             react: { name: "React", percents: "100", color: "info" },
             javascript: {
@@ -88,10 +87,10 @@ const devs = [
             css: { name: "CSS", percents: "100", color: "primary" }
         },
         contacts: {
-            github: "https://github.com/",
-            email: "dev@develop.dev",
-            telegram: "https://t.me/",
-            discord: "https://discordapp.com/users/хххххххххххххххххх/"
+            github: "https://github.com/NikaLuki",
+            email: "nikita.lukinykh.s@gmail.com",
+            telegram: "https://t.me/NikaLuki",
+            discord: "https://discordapp.com/users/297374377866035211/"
         },
         completed: ["Структура сайта", "Роутинг", "Navbar", "Breadcrumbs"]
     },
@@ -99,9 +98,11 @@ const devs = [
         _id: "45123",
         firstName: "Дмитрий",
         lastName: "Баулин",
-        birthday: "2000-01-01",
+        role: "Участнк",
+        color: "dark",
+        birthday: "1975-09-10",
         photo: dima,
-        about: "О себе",
+        about: "Требователен к себе. Нравится постоянно расти и развиваться. Люблю грамотность, как в русском и английском, так и в написании кода. Ценю в людях открытость и легкость. Играю в бильярд. Пишу электронную музыку.",
         technologies: {
             react: { name: "React", percents: "75", color: "info" },
             javascript: {
@@ -129,7 +130,7 @@ const devs = [
         color: "info",
         birthday: "1991-07-14",
         photo: andrey,
-        about: "О себе",
+        about: "Ответственный, честный. Интерисуюсь 3D моделированием, видео-монтажом, программированием. Летом люблю кататься на мотоцикле.",
         technologies: {
             react: { name: "React", percents: "50", color: "info" },
             javascript: {
@@ -139,7 +140,7 @@ const devs = [
             },
             git: { name: "GIT", percents: "60", color: "dark" },
             html: { name: "HTML", percents: "75", color: "danger" },
-            css: { name: "CSS", percents: "60", color: "primary" }
+            css: { name: "CSS", percents: "50", color: "primary" }
         },
         contacts: {
             github: "https://github.com/AndreyDid",
@@ -147,8 +148,17 @@ const devs = [
             telegram: "https://t.me/AndreyDidenk0",
             discord: "https://discordapp.com/users/514663030567731213/"
         },
-        completed: ["Button", "Badge", "Slider"]
+        completed: ["Button", "Badge", "Slider", "AboutProject"]
     }
 ];
 
-export default devs;
+const fetchAll = () =>
+    new Promise((resolve) => {
+        window.setTimeout(function () {
+            resolve(devs);
+        }, 1000);
+    });
+
+export default {
+    fetchAll
+};
