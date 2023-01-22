@@ -32,10 +32,10 @@
 
 [Виталий Бочкарев](https://github.com/vitboch), team-lead
 
-[Святослав Орлов]()
+[Святослав Орлов](https://github.com/orlov11)
 
 [Никита Лукиных]()
 
 [Дмитрий Баулин](https://github.com/nonfermata)
 
-[Андрей Диденко]()
+[Андрей Диденко](https://github.com/AndreyDid)
