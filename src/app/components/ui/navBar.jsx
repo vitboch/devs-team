@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
     const navItems = [
         { name: "Главная", path: "" },
-        { name: "Избранное", path: "favourites" },
+        { name: "Избранные", path: "favourites" },
         { name: "О проекте", path: "aboutProject" }
     ];
 
