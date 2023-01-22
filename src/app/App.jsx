@@ -4,6 +4,8 @@ import DeveloperPage from "./components/page/developerPage";
 import FavouritesPage from "./components/page/favouritesPage";
 import MainPage from "./components/page/mainPage";
 import MainLayout from "./layouts/mainLayout";
+// import Footer from "./components/ui/footer/footer";
+import AboutProject from "./components/page/aboutProject";
 import { getStorage, changeStorage } from "./utils/favouritesUtils";
 
 const App = () => {
@@ -26,6 +28,7 @@ const App = () => {
                         }
                     />
                     <Route path=":devId" element={<DeveloperPage />} />
+                    <Route path="aboutProject" element={<AboutProject />} />
                     <Route
                         path="favourites"
                         element={
