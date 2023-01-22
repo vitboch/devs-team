@@ -1,6 +1,6 @@
 import React from "react";
-import resSchoolIcon from "../../../../assets/images/icons/result-school.png";
-import gitHabIcon from "../../../../assets/images/icons/gitHub.png";
+import resSchoolIcon from "../../../assets/images/icons/result-school.png";
+import gitHabIcon from "../../../assets/images/icons/gitHub.png";
 
 const Footer = () => {
     return (
@@ -22,7 +22,7 @@ const Footer = () => {
                             className="text-decoration-none d-flex gap-2 text-secondary"
                         >
                             <img
-                                className="footerIcon"
+                                style={{ width: "20px", height: "20px" }}
                                 src={gitHabIcon}
                                 alt="GitHub"
                             />
@@ -38,7 +38,7 @@ const Footer = () => {
                             className="text-decoration-none d-flex gap-2 text-secondary"
                         >
                             <img
-                                className="footerIcon"
+                                style={{ width: "20px", height: "20px" }}
                                 src={resSchoolIcon}
                                 alt="Result.School"
                             />
