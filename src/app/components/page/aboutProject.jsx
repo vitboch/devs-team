@@ -43,11 +43,13 @@ const AboutProject = () => {
                             <div className="accordion-body">
                                 <ul>
                                     <li>
-                                        Отображается слайдер показывающий
-                                        информацию о веб-технологиях
+                                        Слайдер дает краткую информацию о
+                                        веб-технологиях
                                     </li>
-                                    <li>Отображается информацию о команде</li>
-                                    <li>Представлен каждый участник команды</li>
+                                    <li>
+                                        Вкратце рассказываем о нашей команде
+                                    </li>
+                                    <li>Несколько слов о каждом из нас</li>
                                 </ul>
                             </div>
                         </div>
@@ -73,12 +75,15 @@ const AboutProject = () => {
                         >
                             <div className="accordion-body">
                                 <ul>
-                                    <li>Отображется информаця о человеке</li>
+                                    <li>
+                                        Представление каждого из участников
+                                        команды
+                                    </li>
                                     <ul>
                                         <li>Имя, фамилия</li>
+                                        <li>Фотография</li>
                                         <li>Возраст</li>
-                                        <li>О себе</li>
-                                        <li>Фото</li>
+                                        <li>Немного о себе</li>
                                         <li>Социальные сети</li>
                                         <li>
                                             Чем занимался в разработке данного
@@ -88,26 +93,23 @@ const AboutProject = () => {
                                     <li>Использовались общие компоненты</li>
                                     <ul>
                                         <li className="fw-bold m-0">
-                                            Progress
+                                            Progress Bar
                                         </li>
                                         <p>
-                                            Указывает какие технологии знает
-                                            человек и на сколько процентов
+                                            Отображает уровень знаний о каждой
+                                            из технологий
                                         </p>
                                         <li className="fw-bold m-0">Badge</li>
                                         <p>
-                                            Отображает роль человека в комманде
+                                            Отображает роль человека в команде
                                         </p>
                                         <li className="fw-bold m-0">Button</li>
                                         <p>
-                                            Дает возможность перейти на страницу
-                                            пользователя и добавления в закладки
+                                            Переход по кнопке на страницу
+                                            пользователя, а также добавление его
+                                            в «Избранное»
                                         </p>
                                     </ul>
-                                    <li>
-                                        Реализованна возможность добавления в
-                                        избранное.
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -125,7 +127,7 @@ const AboutProject = () => {
                                 aria-expanded="false"
                                 aria-controls="flush-collapseThree"
                             >
-                                Избранные
+                                Избранное
                             </button>
                         </h2>
                         <div
@@ -137,12 +139,12 @@ const AboutProject = () => {
                             <div className="accordion-body">
                                 <ul>
                                     <li>
-                                        Отображает избранных участников из
-                                        localStorage
+                                        Отображение участников, добавленных в
+                                        «Избранное»
                                     </li>
                                     <li>
                                         Возможность удаления участников из
-                                        избранного
+                                        «Избранного»
                                     </li>
                                 </ul>
                             </div>
@@ -175,15 +177,11 @@ const AboutProject = () => {
                             data-bs-parent="#accordionFlushExample"
                         >
                             <div className="accordion-body">
-                                <p className="fw-bold">Компонент принимает:</p>
-                                <ul>
-                                    <li>
-                                        Процент, на который будет заполнена
-                                        шкала
-                                    </li>
-                                    <li>Название шкалы</li>
-                                    <li>Цвет</li>
-                                </ul>
+                                <p>
+                                    Разноцветный компонент с названием
+                                    технологии, шкала которого заполнена в
+                                    процентном соотношении
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -207,15 +205,10 @@ const AboutProject = () => {
                             data-bs-parent="#accordionFlushExample"
                         >
                             <div className="accordion-body">
-                                <p className="fw-bold">Компонент принимает:</p>
-                                <ul>
-                                    <li>Цвет</li>
-                                    <li>Функцию, при клике</li>
-                                    <li>Название кнопки</li>
-                                    <li>
-                                        Тип (скругленные углы или квадратные)
-                                    </li>
-                                </ul>
+                                <p>
+                                    Кнопка, вариативная по цвету и названию,
+                                    выполняющая определенную функцию
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -229,7 +222,7 @@ const AboutProject = () => {
                                 aria-expanded="false"
                                 aria-controls="flush-collapseSix"
                             >
-                                Карточка человека
+                                Карточка участника
                             </button>
                         </h2>
                         <div
@@ -239,17 +232,13 @@ const AboutProject = () => {
                             data-bs-parent="#accordionFlushExample"
                         >
                             <div className="accordion-body">
-                                <p className="fw-bold">Отображает:</p>
-                                <ul>
-                                    <li>Имя, фамилия</li>
-                                    <li>Возраст</li>
-                                    <li>Фотография</li>
-                                    <li>Краткую информацию о человеке</li>
-                                    <li>Кнопка &quot;открыть&quot;</li>
-                                    <li>
-                                        Кнопка &quot;добавить в избранное&quot;
-                                    </li>
-                                </ul>
+                                <p>
+                                    Дает краткую информацию об участнике: имя,
+                                    фамилия, возраст, фотография, несколько слов
+                                    о себе. Внутри компонент имеет два вложенных
+                                    компонента: кнопки «открыть» и «добавить в
+                                    избранное»
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -276,7 +265,10 @@ const AboutProject = () => {
                             data-bs-parent="#accordionFlushExample"
                         >
                             <div className="accordion-body">
-                                <li>Хлебные крошки до текущей страницы</li>
+                                <p>
+                                    «Хлебные крошки» – удобный путь до текущей
+                                    страницы
+                                </p>
                                 <p className="fw-lighter">
                                     Home / Library / Data
                                 </p>
@@ -306,11 +298,10 @@ const AboutProject = () => {
                             data-bs-parent="#accordionFlushExample"
                         >
                             <div className="accordion-body">
-                                <p className="fw-bold">Компонент принимает:</p>
-                                <ul>
-                                    <li>Цвет</li>
-                                    <li>Контент</li>
-                                </ul>
+                                <p>
+                                    Цветная табличка с отображением роли в
+                                    команде
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -363,8 +354,7 @@ const AboutProject = () => {
                         >
                             <div className="accordion-body">
                                 <li>
-                                    Выделяет нижний колонтитул (“подвал”)
-                                    веб-сайта
+                                    Выделяет нижний колонтитул (“подвал”) сайта
                                 </li>
                             </div>
                         </div>
@@ -393,7 +383,7 @@ const AboutProject = () => {
                         >
                             <div className="accordion-body">
                                 <li>
-                                    Слайдер показывающий информацию о
+                                    Слайдер, показывающий информацию о
                                     веб-технологиях
                                 </li>
                             </div>
@@ -422,7 +412,10 @@ const AboutProject = () => {
                             data-bs-parent="#accordionFlushExample"
                         >
                             <div className="accordion-body">
-                                <li>Отображается пока страница загружается</li>
+                                <p>
+                                    Анимированная заставка, пока страница
+                                    загружается
+                                </p>
                             </div>
                         </div>
                     </div>
