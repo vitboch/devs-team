@@ -44,18 +44,22 @@ const MainPage = () => {
                 </section>
                 <div className="album py-5 bg-light p-3">
                     <div className="container">
-                        <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
+                        <div>
                             {!isLoading ? (
-                                developers.map((dev) => (
-                                    <Card
-                                        key={dev._id}
-                                        {...dev}
-                                        isFavourite={getIsFavouriteStatus(
-                                            dev._id
-                                        )}
-                                        handleFavourites={changeFavouritesState}
-                                    />
-                                ))
+                                <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
+                                    {developers.map((dev) => (
+                                        <Card
+                                            key={dev._id}
+                                            {...dev}
+                                            isFavourite={getIsFavouriteStatus(
+                                                dev._id
+                                            )}
+                                            handleFavourites={
+                                                changeFavouritesState
+                                            }
+                                        />
+                                    ))}{" "}
+                                </div>
                             ) : (
                                 <Loader />
                             )}
