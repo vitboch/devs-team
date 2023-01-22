@@ -5,7 +5,6 @@ import FavouritesPage from "./components/page/favouritesPage";
 import MainPage from "./components/page/mainPage";
 // import NavBar from "./components/ui/navBar";
 import MainLayout from "./layouts/mainLayout";
-import Footer from "./components/ui/footer/footer";
 import { getStorage, changeStorage } from "./utils/favouritesUtils";
 
 const App = () => {
@@ -15,7 +14,7 @@ const App = () => {
         setFavourites(getStorage());
     };
     return (
-        <div className="mainContainer">
+        <>
             <Routes>
                 <Route path="" element={<MainLayout />}>
                     <Route
@@ -40,8 +39,7 @@ const App = () => {
                 </Route>
                 <Route path="*" element={<Navigate to={""} />} />
             </Routes>
-            <Footer />
-        </div>
+        </>
     );
 };
 

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import devs from "../../api/devs.api";
 
 const FavouritesPage = ({ favourites, handleFavourites }) => {
-    const favouritesObjects = favourites.map((id) =>
+    const favouritesPersons = favourites.map((id) =>
         devs.find((dev) => dev._id === id)
     );
     return (
@@ -14,7 +14,7 @@ const FavouritesPage = ({ favourites, handleFavourites }) => {
                 {favourites.length !== 0 ? (
                     <div className="container">
                         <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
-                            {favouritesObjects.map((dev) => (
+                            {favouritesPersons.map((dev) => (
                                 <Card
                                     key={dev._id}
                                     {...dev}
