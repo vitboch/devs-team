@@ -13,7 +13,7 @@ const FavouritesPage = () => {
     } = useDeveloper();
 
     const favouritesDevelopers = getFavouritesDevelopers();
-    console.log(favouritesDevelopers);
+
     return (
         <>
             <h1 className="fw-light text-center mb-4">Избранное</h1>
