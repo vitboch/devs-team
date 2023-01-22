@@ -3,23 +3,28 @@ import Card from "../common/card";
 import PropTypes from "prop-types";
 import { useDeveloper } from "../../hooks/useDevelopers";
 
-const FavouritesPage = ({ favourites, handleFavourites }) => {
-    const { getDeveloperById, isLoading } = useDeveloper();
+const FavouritesPage = () => {
+    const {
+        isLoading,
 
-    const favouritesPersons = favourites.map((id) => getDeveloperById(id));
+        changeFavouritesState,
+        getFavouritesDevelopers
+    } = useDeveloper();
+
+    const favouritesDevelopers = getFavouritesDevelopers();
     return (
         <>
             <h1 className="fw-light text-center mb-4">Избранное</h1>
             <div className="album py-5 bg-light p-3">
                 {!isLoading ? (
-                    favourites.length !== 0 ? (
+                    favouritesDevelopers ? (
                         <div className="container">
                             <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
-                                {favouritesPersons.map((dev) => (
+                                {favouritesDevelopers.map((dev) => (
                                     <Card
                                         key={dev._id}
                                         {...dev}
-                                        handleFavourites={handleFavourites}
+                                        handleFavourites={changeFavouritesState}
                                         isFavourite={true}
                                     />
                                 ))}

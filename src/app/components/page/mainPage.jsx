@@ -1,15 +1,15 @@
 import React from "react";
 import { useDeveloper } from "../../hooks/useDevelopers";
-// import devs from "../../api/devs.api";
 import Card from "../common/card";
 import Slider from "../ui/slider";
-import PropTypes from "prop-types";
 
-const MainPage = ({ favourites, handleFavourites }) => {
-    const { developers, isLoading } = useDeveloper();
-    const getIsFavouriteStatus = (id) => {
-        return favourites.some((item) => item === id);
-    };
+const MainPage = () => {
+    const {
+        developers,
+        isLoading,
+        changeFavouritesState,
+        getIsFavouriteStatus
+    } = useDeveloper();
 
     return (
         <>
@@ -52,7 +52,9 @@ const MainPage = ({ favourites, handleFavourites }) => {
                                           isFavourite={getIsFavouriteStatus(
                                               dev._id
                                           )}
-                                          handleFavourites={handleFavourites}
+                                          handleFavourites={
+                                              changeFavouritesState
+                                          }
                                       />
                                   ))
                                 : "Loader..."}
@@ -72,11 +74,6 @@ const MainPage = ({ favourites, handleFavourites }) => {
             </main>
         </>
     );
-};
-
-MainPage.propTypes = {
-    favourites: PropTypes.array,
-    handleFavourites: PropTypes.func
 };
 
 export default MainPage;
