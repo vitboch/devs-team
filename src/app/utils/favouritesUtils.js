@@ -1,7 +1,7 @@
 export const getStorage = () => {
     if (
         localStorage.getItem("favourites") &&
-        localStorage.getItem("favourites") !== "[]"
+        localStorage.getItem("favourites").length !== 0
     ) {
         return JSON.parse(localStorage.getItem("favourites"));
     } else return [];
@@ -10,7 +10,7 @@ export const getStorage = () => {
 export const changeStorage = (id) => {
     if (
         localStorage.getItem("favourites") &&
-        localStorage.getItem("favourites") !== "[]"
+        localStorage.getItem("favourites").length !== 0
     ) {
         const favourites = JSON.parse(localStorage.getItem("favourites"));
         const isFavourite = favourites.some((item) => item === id);
