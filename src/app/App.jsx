@@ -15,7 +15,7 @@ const App = () => {
         setFavourites(getStorage());
     };
     return (
-        <>
+        <div className="mainContainer">
             <Routes>
                 <Route path="" element={<MainLayout />}>
                     <Route
@@ -41,7 +41,7 @@ const App = () => {
                 <Route path="*" element={<Navigate to={""} />} />
             </Routes>
             <Footer />
-        </>
+        </div>
     );
 };
 
