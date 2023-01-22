@@ -40,7 +40,12 @@ const PersonalCard = ({ id }) => {
                                 {user.lastName}
                                 <span className="bage">
                                     {" "}
-                                    {<Badge color="danger" name="Участник" />}
+                                    {
+                                        <Badge
+                                            color={user.color}
+                                            name={user.role}
+                                        />
+                                    }
                                 </span>
                             </div>
                             <div className="personal-card__age">

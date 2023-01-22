@@ -1,6 +1,7 @@
 import React from "react";
 import devs from "../../api/devs.api";
 import Card from "../common/card";
+import PersonalCard from "../common/personalCard/personalCard";
 import Slider from "../ui/slider";
 
 const MainPage = () => {
@@ -53,6 +54,7 @@ const MainPage = () => {
                         </div>
                     </div>
                 </section>
+                <PersonalCard id="12345" />
             </main>
         </>
     );
