@@ -46,7 +46,7 @@ const Slider = () => {
                     <img
                         src="https://luxe-host.ru/wp-content/uploads/5/7/4/57431b4926e6ec2931726ca9d4e512c4.jpeg"
                         className="d-block w-100"
-                        alt="..."
+                        alt="img html"
                     />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>HTML (HyperText Markup Language)</h5>
@@ -60,7 +60,7 @@ const Slider = () => {
                     <img
                         src="https://sun9-13.userapi.com/impf/c851520/v851520363/12e155/1hHUqzbS-xE.jpg?size=1280x720&quality=96&sign=ecef10666a89eb6d39b2badf1c5e90c6&type=album"
                         className="d-block w-100"
-                        alt="..."
+                        alt="img css"
                     />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>CSS</h5>
@@ -74,7 +74,7 @@ const Slider = () => {
                     <img
                         src="https://i09.fotocdn.net/s115/c5d34728f48f0c02/public_pin_l/2627484884.jpg"
                         className="d-block w-100"
-                        alt="..."
+                        alt="img javascript"
                     />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>JavaScript</h5>
@@ -88,7 +88,7 @@ const Slider = () => {
                     <img
                         src="https://i08.fotocdn.net/s113/868ffa9dc8a9ca7a/public_pin_l/2565227674.jpg"
                         className="d-block w-100"
-                        alt="..."
+                        alt="img react"
                     />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>React</h5>
@@ -102,7 +102,7 @@ const Slider = () => {
                     <img
                         src="https://telegra.ph/file/b80ace06bfdf1af593787.jpg"
                         className="d-block w-100"
-                        alt="..."
+                        alt="img github"
                     />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>GitHub</h5>
