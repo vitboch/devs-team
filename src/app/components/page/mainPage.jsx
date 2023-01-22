@@ -2,8 +2,12 @@ import React from "react";
 import devs from "../../api/devs.api";
 import Card from "../common/card";
 import Slider from "../ui/slider";
+import PropTypes from "prop-types";
 
-const MainPage = () => {
+const MainPage = ({ favourites, handleFavourites }) => {
+    const getIsFavouriteStatus = (id) => {
+        return favourites.some((item) => item === id);
+    };
     return (
         <>
             <div className=" container fw-light text-center mb-4">
@@ -38,7 +42,12 @@ const MainPage = () => {
                     <div className="container">
                         <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
                             {devs.map((dev) => (
-                                <Card key={dev._id} {...dev} />
+                                <Card
+                                    key={dev._id}
+                                    {...dev}
+                                    isFavourite={getIsFavouriteStatus(dev._id)}
+                                    handleFavourites={handleFavourites}
+                                />
                             ))}
                         </div>
                     </div>
@@ -56,6 +65,11 @@ const MainPage = () => {
             </main>
         </>
     );
+};
+
+MainPage.propTypes = {
+    favourites: PropTypes.array,
+    handleFavourites: PropTypes.func
 };
 
 export default MainPage;
