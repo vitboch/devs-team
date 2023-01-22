@@ -1,13 +1,17 @@
 import React from "react";
-import devs from "../../api/devs.api";
+import { useDeveloper } from "../../hooks/useDevelopers";
 import Card from "../common/card";
+import Loader from "../common/loader";
 import Slider from "../ui/slider";
-import PropTypes from "prop-types";
 
-const MainPage = ({ favourites, handleFavourites }) => {
-    const getIsFavouriteStatus = (id) => {
-        return favourites.some((item) => item === id);
-    };
+const MainPage = () => {
+    const {
+        developers,
+        isLoading,
+        changeFavouritesState,
+        getIsFavouriteStatus
+    } = useDeveloper();
+
     return (
         <>
             <div className=" container fw-light text-center mb-4">
@@ -40,15 +44,25 @@ const MainPage = ({ favourites, handleFavourites }) => {
                 </section>
                 <div className="album py-5 bg-light p-3">
                     <div className="container">
-                        <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
-                            {devs.map((dev) => (
-                                <Card
-                                    key={dev._id}
-                                    {...dev}
-                                    isFavourite={getIsFavouriteStatus(dev._id)}
-                                    handleFavourites={handleFavourites}
-                                />
-                            ))}
+                        <div>
+                            {!isLoading ? (
+                                <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
+                                    {developers.map((dev) => (
+                                        <Card
+                                            key={dev._id}
+                                            {...dev}
+                                            isFavourite={getIsFavouriteStatus(
+                                                dev._id
+                                            )}
+                                            handleFavourites={
+                                                changeFavouritesState
+                                            }
+                                        />
+                                    ))}{" "}
+                                </div>
+                            ) : (
+                                <Loader />
+                            )}
                         </div>
                     </div>
                 </div>
@@ -65,11 +79,6 @@ const MainPage = ({ favourites, handleFavourites }) => {
             </main>
         </>
     );
-};
-
-MainPage.propTypes = {
-    favourites: PropTypes.array,
-    handleFavourites: PropTypes.func
 };
 
 export default MainPage;
