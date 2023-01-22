@@ -2,28 +2,24 @@ import React, { useEffect, useState } from "react";
 import Badge from "../../common/badge";
 import Progress from "../../common/progress";
 import PropTypes from "prop-types";
-import devs from "../../../api/devs.api";
-import "./personalCard.css";
 import findUser from "../../../utils/findUser";
+import "./personalCard.css";
 import getAge from "../../../utils/getAge";
+import API from "../../../api";
 
 const PersonalCard = ({ id }) => {
     const [user, setUser] = useState();
+
     useEffect(() => {
-        setUser({ ...findUser(id, devs) });
+        API.developers
+            .fetchAll()
+            .then((res) => setUser({ ...findUser(id, res) }));
     }, []);
-    const handleClick = () => {
-        console.log(id);
-    };
     return (
         user && (
             <div className="container">
                 <h1 className="title">
                     {user.firstName} {user.lastName}{" "}
-                    <button onClick={handleClick}>
-                        {" "}
-                        {<i className="bi bi-star"></i>}
-                    </button>
                 </h1>
 
                 <div className="personal-card">
