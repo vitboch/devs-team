@@ -16,7 +16,7 @@ const DeveloperPage = () => {
             }
         }
     }, [isLoading]);
-    if (!isLoading) {
+    if (!isLoading && getDeveloperById(devId)) {
         const developer = getDeveloperById(devId);
         return (
             <div className="container mt-3">

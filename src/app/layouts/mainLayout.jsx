@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import NavBar from "../components/ui/navBar";
 import DeveloperProvider from "../hooks/useDevelopers";
-import Footer from "../components/ui/footer/footer";
+import Footer from "../components/ui/footer";
 import Breadcrumbs from "../components/ui/breadcrumbs";
 
 const MainLayout = () => {
