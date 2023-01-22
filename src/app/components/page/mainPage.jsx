@@ -6,7 +6,7 @@ import Slider from "../ui/slider";
 const MainPage = () => {
     return (
         <>
-            <div className="fw-light text-center mb-4">
+            <div className=" container fw-light text-center mb-4">
                 <Slider/>
             </div>
             <main>

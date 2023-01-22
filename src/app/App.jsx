@@ -6,6 +6,7 @@ import MainPage from "./components/page/mainPage";
 // import NavBar from "./components/ui/navBar";
 import MainLayout from "./layouts/mainLayout";
 import Footer from "./components/ui/footer/footer";
+import AboutProject from "./components/page/aboutProject";
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
                     <Route path="" element={<MainPage />} />
                     <Route path=":devId" element={<DeveloperPage />} />
                     <Route path="favourites" element={<FavouritesPage />} />
+                    <Route path="aboutProject" element={<AboutProject />} />
                 </Route>
                 <Route path="*" element={<Navigate to={""} />} />
             </Routes>
