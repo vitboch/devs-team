@@ -10,8 +10,8 @@ const MainPage = ({ favourites, handleFavourites }) => {
     };
     return (
         <>
-            <div className="fw-light text-center mb-4">
-                <Slider />
+            <div className=" container fw-light text-center mb-4">
+                <Slider/>
             </div>
             <main>
                 <section className="py-5 container p-3">

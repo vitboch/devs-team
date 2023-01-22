@@ -120,7 +120,7 @@ const devs = [
         lastName: "Диденко",
         birthday: "1991-07-14",
         photo: andrey,
-        about: "О себе",
+        about: "Ответственный, честный. Интерисуюсь 3D моделированием, видео-монтажом, программированием. Летом люблю кататься на мотоцикле.",
         technologies: {
             react: { name: "React", percents: "50", color: "info" },
             javascript: {
@@ -130,7 +130,7 @@ const devs = [
             },
             git: { name: "GIT", percents: "60", color: "dark" },
             html: { name: "HTML", percents: "75", color: "danger" },
-            css: { name: "CSS", percents: "60", color: "primary" }
+            css: { name: "CSS", percents: "50", color: "primary" }
         },
         contacts: {
             github: "https://github.com/AndreyDid",
@@ -138,7 +138,7 @@ const devs = [
             telegram: "https://t.me/AndreyDidenk0",
             discord: "https://discordapp.com/users/514663030567731213/"
         },
-        completed: ["Button", "Badge", "Slider"]
+        completed: ["Button", "Badge", "Slider", "AboutProject"]
     }
 ];
 
