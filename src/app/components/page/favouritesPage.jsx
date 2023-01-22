@@ -19,7 +19,7 @@ const FavouritesPage = ({ favourites, handleFavourites }) => {
                                     key={dev._id}
                                     {...dev}
                                     handleFavourites={handleFavourites}
-                                    isFavourite="true"
+                                    isFavourite={true}
                                 />
                             ))}
                         </div>
