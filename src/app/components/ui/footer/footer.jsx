@@ -29,7 +29,7 @@ const Footer = () => {
                             src={gitHabIcon}
                             alt="GitHub"
                         />
-                        Исходный код
+                        <span className={styles.footerLinkName}>Исходный код</span>
                     </a>
                     <a
                         href="https://result.school/"
@@ -46,7 +46,7 @@ const Footer = () => {
                             src={resSchoolIcon}
                             alt="Result.School"
                         />
-                        Наши наставники
+                        <span className={styles.footerLinkName}>Наши наставники</span>
                     </a>
                 </div>
             </div>
