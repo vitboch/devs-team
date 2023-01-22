@@ -42,7 +42,7 @@ const devs = [
         lastName: "Орлов",
         birthday: "1997-09-29",
         photo: svyat,
-        about: "О себе",
+        about: "Быстро обучаюсь новому, достигаю поставленых целей. Люблю пешие прогулки, фотографировать и стильно одеваться. Праактикую осознаный подход к жизни. ",
         technologies: {
             react: { name: "React", percents: "60", color: "info" },
             javascript: {
